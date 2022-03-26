@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #bde7ff;
+}
+.container{
+    width: 100%;
+    height: 70px;
+    background-color: #00a3ff;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.item{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration-style: none;
+    color: black;
+
+}
+.box1{
+    width: 100%;
+    height: 250px;
+    background-color: #f5fbff71;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+    
+}
+.img1{
+align-items: flex-end;
+
+}
+.foot{
+    background-color: #00a3ff;
+    color: azure;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;  
+}
+#text{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.box2{
+    width: 50%;
+    height: 250px;
+    background-color: #f5fbff71;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    float: right;
+    
+}
+#taximg{
+    width: 100%;
+    height: 400px;
+
+    
+}
+#heading{
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    font-size: 45px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-style: arial;
+    text-align: center;
+}
