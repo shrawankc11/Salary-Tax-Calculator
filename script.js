@@ -1,3 +1,11 @@
-const salary = document.getElementById("Salary");
+//HTML DOM manipulation
 
-console.log(salary.value);
+//functions
+
+
+//eventlistners/handlers
+
+
+//create element
+
+
