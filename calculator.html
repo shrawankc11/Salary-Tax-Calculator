@@ -12,6 +12,7 @@
     <div class="item">
         <a style="text-decoration: none;" href="./home.html">Home</a>
     </div>
+   
     <div class="item">
         <a style="text-decoration: none;" href="./calculator.html">Calculator</a>
     </div>
@@ -25,33 +26,40 @@
         
       <div class="second">
       
-              <label for="nature">Nature of Employee :</label>
+              <label for="nature">Nature of Employee:</label>
               <select name="nature" id="nature">
                 <option id="unmarried" value="unmarried">Unmarried</option>
                 <option id ="married" value="married">Married</option>
               </select>
-              <br>
-            </div>
-      
-            <div class="Fiscal">
+              
+              <label for="income">Income:</label> 
+              <select name="income" id="income">
+                <option value="yearly">Yearly</option>
+                <option value="monthly">Monthly</option>
+              </select>
               <label for="Year">Fiscal year:</label>
               <select name="year" id="year">
                 <option id="77" value="2076/2077">2076/2077</option>
                 <option id="76" value="2075/2076">2075/2076</option>
               </select>
-              <br>
+            <br>
             </div>
+      
+            <!-- <div class="Fiscal">
+              <label for="Year">Fiscal year:</label>
+              <select name="year" id="year">
+                <option id="77" value="2076/2077">2076/2077</option>
+                <option id="76" value="2075/2076">2075/2076</option>
+              </select>
+
+            
+              
+            </div> -->
           </div>
 
           <div class="income">
             <h1> Annual Income</h1><br>
-          
-                <label for="income">Income :</label>
-                <select name="income" id="income">
-                  <option value="yearly">Yearly</option>
-                  <option value="monthly">Monthly</option>
-                </select>
-                <br>
+
                 <label for="Salary">Salary:</label><br>
   <input type="number" id="Salary" name="Salary"><br><br>
 
@@ -67,7 +75,7 @@
 
         </div>
         <div class="col_4">
-          <h2>Deduction</h2>
+          <h2>Deduction</h2><br>
       
           
               <label for="Salary">Provident Fund:</label><br>
@@ -84,23 +92,27 @@
 
         <section class="third">
           <div class="total">
-            <label for="total">Total Salary :</label>
+            <label for="total">Total Salary:</label>
             <input type="number" id="total" name="Total Salary"><br><br>  
           </div>
-          <div id="reset"> <input type="reset" value="Reset"></div>
+          <div id="row_5">
+             <input id="reset" type="reset" value="Reset"></div>
 
-          <div id="calculate"><input type="submit" value="Calculate"></div>
-          
-           
+          <div id="button">
+          <button id="calculate">Calculate</button>
+            </div>
+  
         </section>
-        
-      
-
     </form>
+    <div style="width: 100%; float:left; height:100px; background:rgb(255, 255, 255); margin-top: 10px;">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sed debitis, laudantium explicabo voluptas id repudiandae. Provident distinctio assumenda necessitatibus odio porro enim, optio, officiis ad iste laudantium suscipit harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores neque accusamus similique iure, ducimus culpa ipsum quibusdam quas tenetur voluptatibus natus! Perspiciatis nisi ratione, itaque aspernatur voluptates quod in distinctio!</p>
+     
+        <div class="foot">
+         <p>Copyright</p>
+        </div>
+      
+    </div>
         
-    <footer>
-      <div class="foot">
-       <p>Copyright</p>
-      </div>
+   
 </body>
 </html>
