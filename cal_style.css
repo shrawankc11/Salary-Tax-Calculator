@@ -4,17 +4,19 @@
     font-family:Arial, Helvetica, sans-serif
 }
 body{
-    background-color: #e0e0e0;
+    background-color: #f5fbff;
 }
 .container{
     width: 100%;
-    height: 60px;
-    background-color: #00a2ffcc;
+    height: 50px;
+    background-color: #00a3ff;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+    align-content: center;
+    
     
 }
 .item{
@@ -24,23 +26,53 @@ body{
     color: black;
 
 }
+
 .heading{
     width: 100%;
-    height: 40px;
-    background-color: #e0e0e0;
+    height: 70px;
+    background-color:#bde7ff ;
+    color:black;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     justify-content: center;
     align-items: flex-start;
+    align-content: center;
     
 }
+#heading{
+    width: 100%;
+    height: 40px;
+    background-color:#bde7ff ;
+    color:black;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+}
+#info{
+    color: rgb(8, 8, 8);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
 .sec_row{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
     margin-left: 25%;
     margin-right: 25%px;
     width: 50%;
-    height: 500px;
-    background-color: #e6e6e6;
+    height: 400px;
+   
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -50,9 +82,10 @@ body{
     
 }
 .second{
+    border-radius: 5px;
     width: 100%;
-    height: 100px;
-    background-color: #81cdff6b;
+    height: 50px;
+    background-color: #bde7ff;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -79,9 +112,10 @@ body{
 }
 .income{
     width: 30%;
-    height: 400px;
-    background-color: #ffffff00; 
+    height: 350px;
+    background-color: #ec1e1e00; 
     margin-left: 120px; 
+    margin-bottom: 50px;
     
   
 
@@ -89,57 +123,44 @@ body{
 }
 .col_4{
     width: 30%;
-    height: 400px;
-    background-color: #f7f0f000;
+    height: 350px;
+    background-color: #f31e1e00;
     margin-left: 100px;
-    
-    
-   
-    
+
     float: left;
 }
-.third{
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: 10px;
-    background-color: #e6e6e6;
-    display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    align-items: flex-start;
-    float: left;
-    justify-content: end;
-    
-}
-.third{
+
+.third_row{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
     margin-left: 25%;
     margin-right: 25%px;
     width: 50%;
-    height: 100px;
-    background-color: #e6e6e6;
+    height: 150px;
+    
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     
- 
-    
- 
 }
 
 .total{
     width: 100%;
     height: 40px;
-    background-color: #81cdff6b;
+    border-radius: 5px;
+    background-color: #bde7ff;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: center;
     align-content: flex-end;
+    justify-content:space-around;
     float: left;
 }
+
 .foot{
-    background-color: #00a2ffcc;
+    background-color: #014987;
     height: 100px;
     color: azure;
     text-align: center;
@@ -155,6 +176,7 @@ body{
         text-decoration: none;
         display: inline-block;
         font-size: 16px;   
+        border-radius: 3px;
   
 }
 #calculate
@@ -165,12 +187,13 @@ body{
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        border-radius: 3px;
         
       }
       #row_5{
         width: 50%;
         height: 50px;
-        background-color: #e0e0e000;
+        background-color: #f3101000;
         display: flex;
         flex-wrap: wrap ;
         flex-direction: row wrap;
@@ -183,7 +206,7 @@ body{
       #button{
         width: 50%;
         height: 50px;
-        background-color: #e0e0e000;
+        background-color: #f5fbff00;
         display: flex;
         flex-wrap: wrap ;
         flex-direction: row wrap;
@@ -192,6 +215,17 @@ body{
         justify-content: end;
         float: left;
         
+      }
+      #note{
+        color: rgb(8, 8, 8);
+
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        flex-direction: row wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    
 
       }
      
