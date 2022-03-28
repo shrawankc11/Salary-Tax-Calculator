@@ -1,19 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:Arial, Helvetica, sans-serif
 }
 body{
-    background-color: #e0e0e0;
+    background-color: #f5fbff;
 }
 .container{
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: #00a3ff;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+    align-content: center;
+    
     
 }
 .item{
@@ -23,40 +26,72 @@ body{
     color: black;
 
 }
+
 .heading{
     width: 100%;
-    height: 40px;
-    background-color: #f7ffff;
+    height: 70px;
+    background-color:#bde7ff ;
+    color:black;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     justify-content: center;
     align-items: flex-start;
+    align-content: center;
     
 }
+#heading{
+    width: 100%;
+    height: 40px;
+    background-color:#bde7ff ;
+    color:black;
+    display: flex;
+    flex-wrap: wrap ;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    
+}
+#info{
+    color: rgb(8, 8, 8);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+
+}
 .sec_row{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
     margin-left: 25%;
     margin-right: 25%px;
     width: 50%;
-    height: 500px;
-    background-color: #e6e6e6;
+    height: 400px;
+   
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: flex-start;
-    float: left;
+    
     
     
 }
 .second{
-    width: 70%;
-    height: 100px;
-    background-color: #81cdff;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    background-color: #bde7ff;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: center;
+    justify-content:space-around;
     float: left;
     
     
@@ -69,76 +104,128 @@ body{
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: flex-start;
-    align-content: center;
+    align-content: flex-start;
     float: right;
     
     
 
 }
 .income{
-    width: 50%;
-    height: 400px;
-    background-color: #c0c4c7;
-   
+    width: 30%;
+    height: 350px;
+    background-color: #ec1e1e00; 
+    margin-left: 120px; 
+    margin-bottom: 50px;
     
-    float: left;
+  
+
+   
 }
 .col_4{
-    width: 50%;
-    height: 400px;
-    background-color: #c0c4c7;
-   
-    
+    width: 30%;
+    height: 350px;
+    background-color: #f31e1e00;
+    margin-left: 100px;
+
     float: left;
 }
-.third{
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: 10px;
-    background-color: #e6e6e6;
-    display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    align-items: flex-start;
-    float: left;
-    
-}
-.third{
+
+.third_row{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
     margin-left: 25%;
     margin-right: 25%px;
     width: 50%;
-    height: 100px;
-    background-color: #e6e6e6;
+    height: 150px;
+    
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
- 
-    
     
 }
 
 .total{
     width: 100%;
-    height: 50px;
-    background-color: #7cc2f8;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #bde7ff;
+    display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
-    align-items: flex-start;
-    align-content: center;
-    float: left;
-    
-    
-   
-    
+    align-items: center;
+    align-content: flex-end;
+    justify-content:space-around;
     float: left;
 }
+
 .foot{
-    background-color: #00a3ff;
+    background-color: #014987;
+    height: 100px;
     color: azure;
     text-align: center;
     padding: 15px;
     bottom: 0;
-    position: fixed;
+    position: relative;
     width: 100%;  
 }
+#reset{ 
+    background-color: #af684c;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;   
+        border-radius: 3px;
+  
+}
+#calculate
+    {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 3px;
+        
+      }
+      #row_5{
+        width: 50%;
+        height: 50px;
+        background-color: #f3101000;
+        display: flex;
+        flex-wrap: wrap ;
+        flex-direction: row wrap;
+        align-items: flex-end;
+        align-content: flex-start;
+        float: left;
+        
+
+      }
+      #button{
+        width: 50%;
+        height: 50px;
+        background-color: #f5fbff00;
+        display: flex;
+        flex-wrap: wrap ;
+        flex-direction: row wrap;
+        align-items: flex-end;
+        align-content: flex-start;
+        justify-content: end;
+        float: left;
+        
+      }
+      #note{
+        color: rgb(8, 8, 8);
+
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        flex-direction: row wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    
+
+      }
+     
