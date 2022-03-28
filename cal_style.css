@@ -142,22 +142,7 @@ body{
     position: fixed;
     width: 100%;  
 }
-#reset{    
-    width: 80%;
-    height: 50px;
-    background-color: #81cdff;
-    display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    align-items: flex-start;
-    align-content: center;
-    float: left;
-}
-#calculate{    
-    width: 20%;
-    height: 50px;
-    background-color: #81cdff;
-    display: flex;
+
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: flex-end;
