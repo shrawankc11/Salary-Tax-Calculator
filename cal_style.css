@@ -143,11 +143,5 @@ body{
     width: 100%;  
 }
 
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    align-items: flex-end;
-    align-content: center;
-    float: right;
-    
-}
+   
 
