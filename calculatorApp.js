@@ -31,7 +31,7 @@ function eraseText(elem) {
 function checkNumInsurace() {
     let number = document.getElementById('Insurance').value;
     if (number > 25000) {
-        alert("Number bigger than 25000!")
+        alert("Insurance cannot be more than Rs.25000!")
         eraseText("Insurance");
     } else return parseInt(number);
 }
@@ -69,24 +69,22 @@ function main(){
         return taxableIncome;
     }
     function taxCalculator(totalIncome, maritalState){
-        bandListForMarried = [450000, 100000, 200000, 1250000, 2000000];
-        bandListForUnmarried = [400000, 100000, 200000, 1300000, 2000000];
+        bandList = {
+            married : [450000, 100000, 200000, 1250000, 2000000],
+            unmarried : [400000, 100000, 200000, 1300000, 2000000],
+        };
         if (maritalState === "married"){
-            marriedPersonIncome = salaryArrayBand(totalIncome, bandListForMarried);
+            marriedPersonIncome = salaryArrayBand(totalIncome, bandList.married);
             return taxableIncomeCalc(marriedPersonIncome)
         }
-        unmarriedPersonIncome = salaryArrayBand(totalIncome, bandListForUnmarried);
+        unmarriedPersonIncome = salaryArrayBand(totalIncome, bandList.unmarried);
         return taxableIncomeCalc(unmarriedPersonIncome);
-
 
     }
     const taxableIncome = taxCalculator(salaryYearly, maritalState)
     document.querySelector("#taxable").value = taxableIncome;
     document.querySelector('#total').value = salaryYearly;
 
-    
-    
-    
 }
 
 //This event will call the main function calculation the final Salary tax based on user given input.
