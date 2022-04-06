@@ -69,17 +69,13 @@ body{
     background-color: #f2f2f2;
     padding: 20px;
     margin-left: 25%;
-    margin-right: 25%px;
+    margin-right: 25%;
     width: 50%;
     height: 400px;
-   
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: flex-start;
-    
-    
-    
 }
 .second{
     border-radius: 5px;
@@ -135,7 +131,7 @@ body{
     background-color: #f2f2f2;
     padding: 20px;
     margin-left: 25%;
-    margin-right: 25%px;
+    margin-right: 25%;
     width: 50%;
     height: 150px;
     
