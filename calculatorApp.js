@@ -86,6 +86,5 @@ function main(){
     document.querySelector('#total').value = salaryYearly;
 
 }
-
 //This event will call the main function calculation the final Salary tax based on user given input.
 document.querySelector('#calculate').addEventListener("click", ()=> main());
