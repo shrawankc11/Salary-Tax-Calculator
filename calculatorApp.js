@@ -23,11 +23,21 @@ function getTime(){
 document.querySelector("#nature").addEventListener("change",() => maritalState = getMaritalState());
 document.querySelector("#time").addEventListener("change",()=> time = getTime());
 
-let insurace;
+let insurance, providentFund, salaryMonthly;
 
+function getSalary(){
+    let number = document.getElementById("Salary").value;
+    return (number);
+}
+
+document.getElementById("Salary").addEventListener('blur', () => salaryMonthly = getSalary())
+
+//This function takes in element id as an parameter and removes the elements value from the text-box if condition are not met
 function eraseText(elem) {
     document.getElementById(elem).value = "";
 }
+
+//This function checks if Insurance is bigger than 25000 or not, which is a standard amount for calculation tax 
 function checkNumInsurace() {
     let number = document.getElementById('Insurance').value;
     if (number > 25000) {
@@ -36,16 +46,31 @@ function checkNumInsurace() {
     } else return parseInt(number);
 }
 
+//This function checks if epf fund is properly inserted or not
+function checkNumEPF(salary){
+    let number = document.getElementById("provident").value;
+    if (number > (20/100 * salary)){
+        alert("EPF cannot be more than 20% of salary!")
+        eraseText("provident");
+    }else return parseInt(number);
+}
+
+//This eventlistener runs when we removed our inpur cursor from epf textbox
+document.getElementById('provident').addEventListener('blur', () => checkNumEPF(salaryMonthly));
+
+//This eventListener runs when we remove our input cursor from insrance textbox
+document.getElementById('Insurance').addEventListener('blur', () => checkNumInsurace());
+
 //This is the main function where our code goes in it will be called when the Calculate button is clicked.
 function main(){
-    const salaryMonthly = parseInt($('#Salary').val());
+    const salaryMonthly = $('#Salary').val();
     const salaryYearly = salaryMonthly * 12;
-    // const bonus = parseInt($('#bonus').val());
-    // const otherIncome = parseInt($('#others').val());
-    // const providentFund = parseInt($('#provident').val());
-    // const CIT = parseInt($('#Citizen').val());
-    // const insurance = parseInt($('#Insurance').val());
-    // const taxableIncome = salaryYearly + bonus + otherIncome - providentFund - CIT - insurance
+    const bonus = parseInt($('#bonus').val());
+    const otherIncome = parseInt($('#others').val());
+    providentFund = checkNumEPF(salaryMonthly);
+    const CIT = parseInt($('#Citizen').val());
+    insurance = checkNumInsurace();
+
     function salaryArrayBand(salary, bandList){
         salaryArr = []
         for (let i of bandList){
@@ -82,7 +107,8 @@ function main(){
 
     }
     const taxableIncome = taxCalculator(salaryYearly, maritalState)
-    document.querySelector("#taxable").value = taxableIncome;
+    const taxableIncomeFinal = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
+    document.querySelector("#taxable").value = taxableIncomeFinal;
     document.querySelector('#total').value = salaryYearly;
 
 }
