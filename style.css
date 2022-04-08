@@ -3,47 +3,99 @@
     padding: 0;
 }
 body{
-    background-color: #bde7ff;
+    background-color: #d6e4f0;
 }
-.container{
+#main {
     width: 100%;
-    height: 70px;
-    background-color: #00a3ff;
+    height: 50px;
+    border: 1px solid black; 
     display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
+    align-items: center; 
+    float: right;
+    justify-content: space-evenly;
+    background-color: #163172;
+    margin-bottom: 10px;
+    
+    
+  }
+
+.home{
+    
+  
+    padding: 10px;
+    display: flex;
+    float: left;
+    font-size: 17px;
+    font-weight: 600;
+  
+   
+
+ }
+ .item{
+    
+ 
+    padding: 10px;
+    display: flex;
+    font-size: 17px;
+    font-weight: 600;
+   
+    
+    
+   
+
+ }
+.login{
+  
+     
+    display: flex;
+    align-items: center; 
+    float: right;
     justify-content: center;
-    align-items: flex-start;
-
+    font-size: 17px;
+    font-weight: 600;
+      
 }
-.item{
-    padding: 20px;
-    font-size: 20px;
-    text-decoration-style: none;
-    color: black;
-
+.ContactUs{
+    
+     
+    display: flex;
+    align-items: center; 
+    float: right;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    
+  
+    
+    
+    
 }
+
 .box1{
     width: 100%;
-    height: 250px;
-    background-color: #f5fbff71;
+    height: 50px;
+    background-color: #f5fbff00;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
 
-
+    
+    
+    
 }
-.img1{
-align-items: flex-end;
-
+.img{
+    justify-content: center;
+    height: 600px;
+    margin-top: 10px;
+    margin-right: 150px;
 }
 .foot{
-    background-color: #00a3ff;
+    background-color: #1e56a0;
     color: azure;
     text-align: center;
-    padding: 15px;
+    padding: 3px;
     bottom: 0;
     position: fixed;
     width: 100%;  
@@ -63,21 +115,78 @@ align-items: flex-end;
     justify-content: flex-end;
     align-items: center;
     float: right;
-
+    
 }
-#taximg{
-    width: 100%;
-    height: 400px;
+    
 
 
+#myDIV {
+    width: 45%;
+    height:200px;
+    background-color:#ffffff00;
+    margin-top: 200px;
+    margin-left: 85px;
+    
+  }
+  .social{
+        
+    margin-top: 5px;
+    color: azure;
+    text-align:center;
+    justify-content: flex-start;
+    bottom: 0;
+    position: relative;
+    width: 100%;  
 }
-#heading{
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    font-size: 45px;
-    font-weight: bolder;
-    color: rgb(0, 0, 0);
-    font-style: arial;
+  .fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 30px;
     text-align: center;
-} 
+    text-decoration: none;
+    margin: 5px 2px;
+    
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 120px;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 120px;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 120px;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    border-radius: 120px;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    border-radius: 120px;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+    border-radius: 120px;
+  }
+  
+ 
+ 
