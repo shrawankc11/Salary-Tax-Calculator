@@ -1,5 +1,3 @@
-
-//Dont use inline
 //PROTOTYPE
 //we declare some global variable to use 
 var maritalState, time;
@@ -13,7 +11,6 @@ function getMaritalState(){
     return Value;
 }
 //this function will get whatever value user has selected fromt the available two values i.e. Yearly and Monthly.
-
 function getTime(){
     const Value2 = $('#time').val();
     return Value2;
@@ -70,6 +67,8 @@ function main(){
     providentFund = checkNumEPF(salaryMonthly);
     const CIT = parseInt($('#Citizen').val());
     insurance = checkNumInsurace();
+    const taxableIncome = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
+
 
     function salaryArrayBand(salary, bandList){
         salaryArr = []
@@ -106,9 +105,10 @@ function main(){
         return taxableIncomeCalc(unmarriedPersonIncome);
 
     }
-    const taxableIncome = taxCalculator(salaryYearly, maritalState)
-    const taxableIncomeFinal = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
-    document.querySelector("#taxable").value = taxableIncomeFinal;
+    const taxableIncomeFinal = taxCalculator(taxableIncome, maritalState);
+    // const taxableIncomeFinal = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
+    // const tax = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
+    document.querySelector("#taxable").value = taxableIncome;
     document.querySelector('#total').value = salaryYearly;
 
 }
