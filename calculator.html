@@ -6,26 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Calculation</title>
     <link rel="stylesheet" href="cal_style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="calculatorApp.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <section class="container">
-    <div class="item">
-        <a style="text-decoration: none;" href="./home.html">Home</a>
+  <section id="main">
+ 
+    <div class="home">
+        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./home.html">Home</a>
     </div>
-   
-    <div class="item">
-        <a style="text-decoration: none;" href="./calculator.html">Calculator</a>
+    <div class="home">
+        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif ;" href="./home.html">News</a>
+        
     </div>
     
-</section>
+    <div class="item">
+        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./calculator.html">Calculator</a>
+    </div>
+    <div class="register">
+        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./login.html">Contact Us</a>
+    </div>
+    
+    
+    <div class="login">
+        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(242, 242, 242); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./login.html">Log in</a>
+    </div>
+   </section>
 <div class="heading">
-  <div id="heading">
+  <div id="heading" style="font-family: Georgia, 'Times New Roman', Times, serif; ">
     <h1>Tax Calculation System</h1>
 </div>
 <div id="info">
-  <p style="font-family: 'Times New Roman', Times, serif;">This tax calculator tool is designed as per the new salary tax which was announced during budget announcement of 2077/2078.</p>
+  <p style="font-family: 'Times New Roman', Times, serif; color: rgb(10, 10, 10);">This tax calculator tool is designed as per the new salary tax which was announced during budget announcement of 2077/2078.</p>
 </div>
 
 </div>
@@ -38,64 +49,50 @@
       
               <label for="nature"> Marital Status:</label>
               <select name="nature" id="nature">
-                <option id="unmarried" value="unmarried" selected>Unmarried</option>
+                <option id="unmarried" value="unmarried">Unmarried</option>
                 <option id ="married" value="married">Married</option>
               </select>
               
-              <label for="time">Fiscal Year:</label> 
-              <select name="time" id="time">
-                <option id="current" value="2077/2078" selected>2077/2078</option>
-                <option id="previous" value="2078/2079">2078/2079</option>
+              <label for="income">Income:</label> 
+              <select name="income" id="income">
+                <option value="yearly">Yearly</option>
+                <option value="monthly">Monthly</option>
               </select>
-              <!-- <label for="Year">Fiscal year:</label>
-              <select name="year" id="year">
-                <option id="77" value="2076/2077">2076/2077</option>
-                <option id="76" value="2075/2076">2075/2076</option>
-              </select> -->
             <br>
             </div>
-      
-            <!-- <div class="Fiscal">
-              <label for="Year">Fiscal year:</label>
-              <select name="year" id="year">
-                <option id="77" value="2076/2077">2076/2077</option>
-                <option id="76" value="2075/2076">2075/2076</option>
-              </select>
-
-            
-              
-            </div> -->
           </div>
+          
 
-          <div class="income">
+          <div class="income"><br>
             <h1> Annual Income</h1><br>
 
                 <label for="Salary">Salary:</label><br>
-              <input type="number" id="Salary" name="Salary" placeholder="Salary"><br><br>
+  <input type="number" id="Salary" name="Salary" placeholder="Salary"><br><br>
 
-              <label for="Bonus">Bonus:</label><br>
-              <input type="number" id="bonus" name="bonus" placeholder="Bonus"><br><br>
+  <label for="Bonus">Bonus:</label><br>
+  <input type="number" id="bonus" name="bonus" placeholder="Bonus"><br><br>
 
-              <label for="months">No. of months:</label><br>
-              <input type="number" id="months" name="months" value="12" ><br><br>
+  <label for="months">No. of months:</label><br>
+  <input type="number" id="months" name="months" placeholder="12" ><br><br>
 
-              <label for="others">Others:</label><br>
-              <input type="number" id="others" name="others" placeholder="Other income">
+  <label for="others">Others:</label><br>
+  <input type="number" id="others" name="others" placeholder="Other income">
 
 
         </div>
-        <div class="col_4">
+        <div class="col_4"><br>
           <h2>Deduction</h2><br>
       
           
               <label for="Provident fund">Provident Fund:</label><br>
-              <input type="number" id="provident" name="Provident fund" placeholder="Provident fund"><br><br>
+<input type="number" id="provident" name="Provident fund" placeholder="Provident fund"><br><br>
 
-              <label for="Citizen">Citizen Investment Trust:</label><br>
-              <input type="number" id="Citizen" name="Citizen" placeholder="Citizen Investment Trust"><br><br>
+<label for="Citizen">Citizen Investment Trust:</label><br>
+<input type="number" id="Citizen" name="Citizen" placeholder="Citizen Investment Trust"><br><br>
 
-              <label for="Insurance">Insurance:</label><br>
-              <input type="number" id="Insurance" name="Insurance" placeholder="Insurance"><br><br>   
+
+<label for="Insurance">Insurance:</label><br>
+<input type="number" id="Insurance" name="Insurance" placeholder="Insurance"><br><br>   
       </div>
 
       </section>
@@ -103,17 +100,17 @@
         <section class="third_row">
           <div class="total">
             <label for="total">Total Salary:</label>
-            <input type="text" id="total" name="Total Salary" readonly><br><br>  
+            <input type="text" id="total" name="Total Salary" style="padding: 3px; border-radius: 4px;"><br><br>  
 
             <label for="total">Taxable income:</label>
-            <input type="text" id="taxable" name="Total Salary" readonly><br><br> 
+            <input type="text" id="taxable" name="Total Salary" style="padding: 3px; border-radius: 4px;"><br><br> 
           </div>
           
           <div id="row_5">
              <input id="reset" type="reset" value="Reset"></div>
 
           <div id="button">
-          <button id="calculate" type="button">Calculate</button>
+          <button id="calculate">Calculate</button>
             </div>
             <div id="note">
               <p style="font-family: 'Times New Roman', Times, serif;">Note: This tool is made for general tax calculation only. Information from this tool should not be used for any other purpose.</p>
@@ -124,13 +121,23 @@
         </section>
         
     </form>
-    <div style="width: 100%; float:left; height:100px; background:rgb(255, 255, 255); margin-top: 10px;"><br>
+    <div style="width: 50%; float:left; height:100px; background:rgba(255, 255, 255, 0); margin-top: 10px;"><br>
      
         <div class="foot">
-         <p>Copyright</p>
+         <p>Terms | Privacy | © 2022 All Rights reserved.</p>
+         <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+
+         </div>
+       
         </div>
-      
     </div>
+
         
    
 </body>

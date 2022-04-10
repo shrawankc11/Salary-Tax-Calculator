@@ -4,34 +4,72 @@
     font-family:Arial, Helvetica, sans-serif
 }
 body{
-    background-color: #f5fbff;
+    background-color: #d6e4f0;
 }
-.container{
-    width: 100%;
-    height: 50px;
-    background-color: #00a3ff;
-    display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: center;
-    
-    
+#main {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center; 
+  float: right;
+  justify-content: space-evenly;
+  background-color: #163172;
+  margin-bottom: 10px;
+}
+
+.home{
+  
+
+  padding: 10px;
+  display: flex;
+  float: left;
+  font-size: 17px;
+  font-weight: 600;
 }
 .item{
-    padding: 20px;
-    font-size: 20px;
-    text-decoration-style: none;
-    color: black;
+  
 
+  padding: 8px;
+  display: flex;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.login{
+  display: flex;
+  font-size: 15px;
+  float: right;
+  
+  width: 70px;
+  height: 25px;
+   
+  display: flex;
+  align-items: center; 
+  float: right;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600; 
+  
+}
+.register{
+  
+   
+  display: flex;
+  align-items: center; 
+  float: right;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+ 
 }
 
 .heading{
     width: 100%;
     height: 70px;
-    background-color:#bde7ff ;
-    color:black;
+    
+  
+    color:rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -41,10 +79,11 @@ body{
     
 }
 #heading{
+  margin: auto;
     width: 100%;
     height: 40px;
-    background-color:#bde7ff ;
-    color:black;
+   
+    color:rgb(11, 11, 11);
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -66,22 +105,24 @@ body{
 }
 .sec_row{
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f243;
     padding: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
-    height: 400px;
+    margin-left: 30%;
+    margin-right: 20%;
+    width: 42%;
+    height: 350px;
+   
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: flex-start;
+  
 }
 .second{
     border-radius: 5px;
     width: 100%;
-    height: 50px;
-    background-color: #bde7ff;
+    height: 60px;
+    background-color: #d6e4f0;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -95,7 +136,7 @@ body{
 .Fiscal{
     width: 30%;
     height: 100px;
-    background-color: #81cdff;
+    background-color: #d6e4f0;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -110,7 +151,7 @@ body{
     width: 30%;
     height: 350px;
     background-color: #ec1e1e00; 
-    margin-left: 120px; 
+    margin-left: 70px; 
     margin-bottom: 50px;
     
   
@@ -128,11 +169,11 @@ body{
 
 .third_row{
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f232;
     padding: 20px;
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 50%;
+    margin-left: 30%;
+    margin-right: 20%;
+    width: 42%;
     height: 150px;
     
     display: flex;
@@ -145,24 +186,24 @@ body{
     width: 100%;
     height: 40px;
     border-radius: 5px;
-    background-color: #bde7ff;
+    background-color: #d6e4f0;
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
     align-items: center;
-    align-content: flex-end;
+    align-content: center;
     justify-content:space-around;
     float: left;
 }
 
 .foot{
     background-color: #014987;
-    height: 100px;
+    height: 50px;
     color: azure;
     text-align: center;
-    padding: 15px;
+    padding: 8px;
     bottom: 0;
-    position: relative;
+    position: fixed;
     width: 100%;  
 }
 #reset{ 
@@ -224,4 +265,63 @@ body{
     
 
       }
+      .social{
+        
+        margin-top: 5px;
+        color: azure;
+        text-align:center;
+        justify-content: flex-start;
+        bottom: 0;
+        position: relative;
+        width: 100%;  
+    }
+      .fa {
+        padding: 5px;
+        font-size: 10px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        
+      }
+      
+      .fa:hover {
+          opacity: 0.7;
+      }
      
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+        border-radius: 120px;
+      }
+      
+      .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        border-radius: 120px;
+      }
+      
+      .fa-google {
+        background: #dd4b39;
+        color: white;
+        border-radius: 120px;
+      }
+      
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        border-radius: 120px;
+      }
+      
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+        border-radius: 120px;
+      }
+      
+      .fa-instagram {
+        background: #125688;
+        color: white;
+        border-radius: 120px;
+      }
+      
