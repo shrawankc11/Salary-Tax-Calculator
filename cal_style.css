@@ -24,21 +24,30 @@ body{
   padding: 10px;
   display: flex;
   float: left;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
+}
+.news{
+  
+
+  padding: 10px;
+  display: flex;
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
 }
 .item{
   
 
   padding: 8px;
   display: flex;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .login{
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   float: right;
   
   width: 70px;
@@ -48,19 +57,18 @@ body{
   align-items: center; 
   float: right;
   justify-content: center;
-  font-size: 17px;
-  font-weight: 600; 
+  font-weight: 400; 
   
 }
-.register{
+.Contactus{
   
    
   display: flex;
   align-items: center; 
   float: right;
   justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
  
 }
 
@@ -106,11 +114,12 @@ body{
 .sec_row{
     border-radius: 5px;
     background-color: #f2f2f243;
+    box-shadow: 0 0 5px rgba(64, 63, 63, 0.98);
     padding: 20px;
     margin-left: 30%;
     margin-right: 20%;
     width: 42%;
-    height: 350px;
+    height: 530px;
    
     display: flex;
     flex-wrap: wrap ;
@@ -121,8 +130,9 @@ body{
 .second{
     border-radius: 5px;
     width: 100%;
-    height: 60px;
+    height: 40px;
     background-color: #d6e4f0;
+    box-shadow: 0 0 2px rgba(64, 63, 63, 0.98);
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -133,23 +143,10 @@ body{
     
     
 }
-.Fiscal{
-    width: 30%;
-    height: 100px;
-    background-color: #d6e4f0;
-    display: flex;
-    flex-wrap: wrap ;
-    flex-direction: row wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    float: right;
-    
-    
 
-}
 .income{
     width: 30%;
-    height: 350px;
+    height: 250px;
     background-color: #ec1e1e00; 
     margin-left: 70px; 
     margin-bottom: 50px;
@@ -160,8 +157,9 @@ body{
 }
 .col_4{
     width: 30%;
-    height: 350px;
+    height: 250px;
     background-color: #f31e1e00;
+  
     margin-left: 100px;
 
     float: left;
@@ -170,6 +168,8 @@ body{
 .third_row{
     border-radius: 5px;
     background-color: #f2f2f232;
+    box-shadow: 0 0 5px rgba(64, 63, 63, 0.98);
+    
     padding: 20px;
     margin-left: 30%;
     margin-right: 20%;
@@ -187,6 +187,7 @@ body{
     height: 40px;
     border-radius: 5px;
     background-color: #d6e4f0;
+    box-shadow: 0 0 2px rgba(64, 63, 63, 0.98);
     display: flex;
     flex-wrap: wrap ;
     flex-direction: row wrap;
@@ -207,13 +208,17 @@ body{
     width: 100%;  
 }
 #reset{ 
-    background-color: #af684c;
+    background-color: #1a99e3fe;
         color: white;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;   
         border-radius: 3px;
+        padding: 5px;
+        border: 0px;
+       
+
   
 }
 #calculate
@@ -225,6 +230,8 @@ body{
         display: inline-block;
         font-size: 16px;
         border-radius: 3px;
+        padding: 5px;
+        border: 0px;
         
       }
       #row_5{
@@ -253,16 +260,4 @@ body{
         float: left;
         
       }
-      #note{
-        color: rgb(8, 8, 8);
-
-        text-decoration: none;
-        display: flex;
-        font-size: 16px;
-        flex-direction: row wrap;
-        align-items: flex-start;
-        align-content: flex-start;
-    
-
-      }
-      
+     

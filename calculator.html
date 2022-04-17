@@ -17,7 +17,7 @@
     <div class="home">
         <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./home.html">Home</a>
     </div>
-    <div class="home">
+    <div class="news">
         <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif ;" href="./home.html">News</a>
         
     </div>
@@ -25,7 +25,7 @@
     <div class="item">
         <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="./calculator.html">Calculator</a>
     </div>
-    <div class="register">
+    <div class="Contactus">
         <a style="background-color:rgba(255, 127, 80, 0); color: rgb(255, 255, 255); text-decoration: none; font-family: 'Times New Roman', Times, serif; " href="#">Contact Us</a>
     </div>
     
@@ -101,31 +101,36 @@
 <label for="Insurance">Insurance:</label><br>
 <input type="number" id="Insurance" name="Insurance" placeholder="Insurance"><br><br>   
       </div>
+      <div>
+        <div class="total">
+          <label for="total">Total Salary:</label>
+          <input type="text" id="total" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br>  
+  
+          <label for="total">Total Tax:</label>
+          <input type="text" id="taxable" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br> 
+        </div>
+        
+        <div id="row_5">
+           <input id="reset" type="reset" value="Reset"></div>
+  
+        <div id="button">
+        <button id="calculate" type="button">Calculate</button>
+          </div>
+          <div id="note">
+            <p style="font-family: 'Times New Roman', Times, serif;">Note: This tool is made for general tax calculation only. Information from this tool should not be used for any other purpose.</p>
+  
+          </div>
+
+      </div>
+      
 
       </section>
 <!-- third_row section helps to display the result of the calculated tax. -->
-        <section class="third_row">
-          <div class="total">
-            <label for="total">Total Salary:</label>
-            <input type="text" id="total" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br>  
-
-            <label for="total">Total Tax:</label>
-            <input type="text" id="taxable" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br> 
-          </div>
-          <!-- the row_5 child class helps consist the calculate and reset button. -->
-          <div id="row_5">
-             <input id="reset" type="reset" value="Reset"></div>
-
-          <div id="button">
-          <button id="calculate" type="button">Calculate</button>
-            </div>
-            <div id="note">
-              <p style="font-family: 'Times New Roman', Times, serif;">Note: This tool is made for general tax calculation only. Information from this tool should not be used for any other purpose.</p>
-
-            </div>
+        <!-- <section class="third_row">
+         
             
            
-        </section>
+        </section> -->
         
     </form>
     <div style="width: 50%; float:left; height:100px; background:rgba(255, 255, 255, 0); margin-top: 10px;"><br>
