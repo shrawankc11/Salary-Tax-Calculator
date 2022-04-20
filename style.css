@@ -80,6 +80,7 @@ body{
 }
 .foot{
     background-color: #1e56a0;
+    height: 50px;
     color: azure;
     text-align: center;
     padding: 3px;
