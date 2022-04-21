@@ -61,7 +61,8 @@ document.getElementById('Insurance').addEventListener('blur', () => checkNumInsu
 function main(){
     //we set some variables to use it in the future code
     const salaryMonthly = $('#Salary').val();
-    const salaryYearly = salaryMonthly * 12;
+    const months = $('#months').val();
+    const salaryYearly = salaryMonthly * months;
     const bonus = parseInt($('#bonus').val());
     const otherIncome = parseInt($('#others').val());
     providentFund = checkNumEPF(salaryMonthly);
@@ -117,9 +118,10 @@ function main(){
     const taxableIncomeFinal = taxCalculator(taxableIncome, maritalState);  //This is the final tax that gets output
     // const taxableIncomeFinal = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
     // const tax = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
-    document.querySelector("#taxable").value = taxableIncome;   
+    document.querySelector("#taxable").value = taxableIncomeFinal;   
     document.querySelector('#total').value = salaryYearly;
 
 }
 //This event will call the main function calculation the final Salary tax based on user given input.
 document.querySelector('#calculate').addEventListener("click", ()=> main());
+
