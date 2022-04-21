@@ -1,6 +1,3 @@
-
-//Dont use inline
-//PROTOTYPE
 //we declare some global variable to use 
 var maritalState, time;
 
@@ -13,7 +10,6 @@ function getMaritalState(){
     return Value;
 }
 //this function will get whatever value user has selected fromt the available two values i.e. Yearly and Monthly.
-
 function getTime(){
     const Value2 = $('#time').val();
     return Value2;
@@ -63,6 +59,7 @@ document.getElementById('Insurance').addEventListener('blur', () => checkNumInsu
 
 //This is the main function where our code goes in it will be called when the Calculate button is clicked.
 function main(){
+    //we set some variables to use it in the future code
     const salaryMonthly = $('#Salary').val();
     const salaryYearly = salaryMonthly * 12;
     const bonus = parseInt($('#bonus').val());
@@ -70,7 +67,10 @@ function main(){
     providentFund = checkNumEPF(salaryMonthly);
     const CIT = parseInt($('#Citizen').val());
     insurance = checkNumInsurace();
+    const taxableIncome = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
 
+    //this function takes in Yearly Salary of the person and divides it into small list according to the band's provided by government
+    //It return a list of different sections of salary in a band-list like structure
     function salaryArrayBand(salary, bandList){
         salaryArr = []
         for (let i of bandList){
@@ -85,6 +85,10 @@ function main(){
         }
         return salaryArr;
     }
+
+    //this function calculates the taxable Income after the bandlist has been passed into it
+    //meaning that it will apply different tax rates to different part of the salary passed
+    //it returns the taxable Income of the passed salary 
     function taxableIncomeCalc(salaryArr){
         let taxableIncome = 0;
         rates = [1, 10, 20, 30, 36];
@@ -93,22 +97,27 @@ function main(){
         }
         return taxableIncome;
     }
+
+    //this is the calculating function where most of the calculation happens. 
+    //This function returns taxable Income of a person as per their Marital State
+    
     function taxCalculator(totalIncome, maritalState){
         bandList = {
             married : [450000, 100000, 200000, 1250000, 2000000],
             unmarried : [400000, 100000, 200000, 1300000, 2000000],
         };
-        if (maritalState === "married"){
+        if (maritalState === "married"){    //if the person is married then the married property of the bandlist object is passed 
             marriedPersonIncome = salaryArrayBand(totalIncome, bandList.married);
             return taxableIncomeCalc(marriedPersonIncome)
-        }
+        }       //else if the perosn is not married then the unmarried property of the bandlist object is passed
         unmarriedPersonIncome = salaryArrayBand(totalIncome, bandList.unmarried);
         return taxableIncomeCalc(unmarriedPersonIncome);
 
     }
-    const taxableIncome = taxCalculator(salaryYearly, maritalState)
-    const taxableIncomeFinal = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
-    document.querySelector("#taxable").value = taxableIncomeFinal;
+    const taxableIncomeFinal = taxCalculator(taxableIncome, maritalState);  //This is the final tax that gets output
+    // const taxableIncomeFinal = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
+    // const tax = taxableIncome + bonus + otherIncome - insurance - CIT - providentFund;
+    document.querySelector("#taxable").value = taxableIncome;   
     document.querySelector('#total').value = salaryYearly;
 
 }
