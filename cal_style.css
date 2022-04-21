@@ -149,7 +149,7 @@ body{
 
 .income{
     width: 30%;
-    height: 250px;
+    height: 290px;
     background-color: #ec1e1e00; 
     margin-left: 70px; 
     margin-bottom: 50px;
@@ -160,8 +160,8 @@ body{
 }
 .col_4{
     width: 30%;
-    height: 250px;
-    background-color: #f31e1e00;
+    height: 290px;
+    background-color: #3a1ef300;
   
     margin-left: 100px;
 
@@ -211,13 +211,13 @@ body{
     width: 100%;  
 }
 #reset{ 
-    background-color: #1a99e3fe;
+    background-color: #1a6ae3fe;
         color: white;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;   
-        border-radius: 3px;
+        border-radius: 4px;
         padding: 5px;
         border: 0px;
         margin-top: 12px;
@@ -233,7 +233,7 @@ body{
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        border-radius: 3px;
+        border-radius: 4px;
         padding: 5px;
         border: 0px;
         margin-top: 12px;
@@ -251,6 +251,12 @@ body{
         float: left;
         
 
+      }
+      input{
+        border-radius: 3px;
+              padding: 5px;
+              border-color: rgba(25, 24, 24, 0.374);
+              
       }
       #button{
         width: 50%;
