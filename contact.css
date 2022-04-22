@@ -115,14 +115,23 @@ body{
     align-content: flex-start;
 }
 .foot{
-    background-color: #1e56a0;
-    
-    color: azure;
-    text-align: center;
-    padding: 10px;
-   bottom: 0;
-    position:fixed;
-    width: 100%;  
+  background-color: #1e56a0;
+  height: 50px;
+  color: azure;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  
+  bottom: 0;
+  position: fixed;
+  
+}
+#pp{
+  margin-right: 10px;
+}
+#p{
+  margin-left: 10px;
 }
 .img{
     justify-content: flex-end;
