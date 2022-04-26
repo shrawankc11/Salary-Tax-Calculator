@@ -4,7 +4,9 @@
     font-family:Arial, Helvetica, sans-serif
 }
 body{
-    background-color: #d6e4f0;
+  background-image: url(./contact1.jpg);
+  background-size: 1600px 750px;
+    
    
 }
 
@@ -15,26 +17,28 @@ body{
   display: flex;
   align-items: center; 
   float: right;
-  justify-content: space-evenly;
-  background-color: #163172;
+  justify-content: end;
+  background-color: #16327200;
   margin-bottom: 10px;
-  position: fixed;
+ 
+  
 }
 
 .home{
   
 
-  padding: 10px;
+  padding: 20px;
   display: flex;
   float: left;
   font-size: 18px;
   font-weight: 400;
+  
 
 }
 .news{
   
 
-  padding: 10px;
+  padding: 20px;
   display: flex;
   float: left;
   font-size: 18px;
@@ -43,7 +47,7 @@ body{
 .item{
   
 
-  padding: 8px;
+  padding: 20px;
   display: flex;
   font-size: 18px;
   font-weight: 400;
@@ -53,7 +57,7 @@ body{
   display: flex;
   font-size: 18px;
   float: right;
-  
+  padding: 20px;
   width: 70px;
   height: 25px;
    
@@ -73,14 +77,13 @@ body{
   justify-content: center;
   font-size: 18px;
   font-weight: 400;
+  padding: 20px;
  
 }
 
 .heading{
     width: 100%;
     height: 70px;
-    
-  
     color:rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap ;
@@ -88,6 +91,8 @@ body{
     justify-content: center;
     align-items: flex-start;
     align-content: center;
+    margin-bottom: 20px;
+    
     
 }
 #heading{
@@ -123,8 +128,8 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;  
-  bottom: 0;
-  position: fixed;
+  
+ 
   
 }
 #pp{
@@ -179,22 +184,37 @@ body{
   .contact_section input,
   .contact_section textarea {
     outline: none;
-    border: 1px solid #c1c1c2;
-    width: 70%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 90%;
     height: 35px;
     padding: 0 5px;
     margin-top: 10px;
+   
+    
     
   }
   
   .contact_section textarea {
     height: 155px;
-    width: 70%;
+    width: 90%;
     padding: 5px;
   }
   
   .contact_form-container {
-    padding: 15px 0 15px 0;
+    padding: 10px 0 10px 0;
+    margin-left: 70px;
+  
+    
+    width: 35%;
+   
+   
+   
+    
+    
+    
   }
   
   .contact_form-container button {
