@@ -11,32 +11,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+  
+  
+
   <!-- main is the parent id of of all child classes.  -->
   <section id="main">
- 
-    <div class="home">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: rgb(208, 208, 208); margin-right: 950px; font-weight: 600; font-size: 30px;">
+      Tax Caculator System
+     </p>
+    <!-- The child class of header. -->
+    <div class="item">
+        <!-- inline style is use to apply unique style for a single element. -->
         <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./home.html">Home</a>
     </div>
-    <div class="home">
-        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif" href="./home.html">News</a>
-        
-    </div>
-    
+ 
     <div class="item">
-        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif, serif " href="./calculator.html">Calculator</a>
-    </div>
-    <div class="Contactus">
-        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(255, 255, 255); text-decoration: none;  font-family: Arial, Helvetica, sans-serif" href="./contact.html">Contact Us</a>
+        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; " href="./contact.html">Contact Us</a>
     </div>
     
-    <div class="login">
-        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(242, 242, 242); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./login.html">Log in</a>
-    </div>
-   </section>
+</section>
    <!-- Title of our project. -->
 <div class="heading">
   <div id="heading" style="font-family: Georgia, 'Times New Roman', Times, serif; ">
-   <h1> Tax Calculation System</h1>
+   <h1>  Tax Calculator</h1>
 </div>
 <!-- it helps to give information about salary tax -->
 <div id="info">
@@ -48,7 +45,7 @@
 
     <form action="">
       <!-- parent class  -->
-      <section class="sec_row">
+      
         <!-- second row in inside the parent class -->
       <div class="second">
       
@@ -73,72 +70,60 @@
               </select>
             <br>
             </div>
-          </div>
-          
+          </div> 
+
+          <section class="sec_row">
 <!-- income is the third child class to get the value of user. -->
           <div class="income"><br>
-            <h1> Annual Income</h1><br>
+            <h1> Annual Income</h1><br> <hr><br>
 
-                <label for="Salary">Salary:</label><br>
-  <input type="number" id="Salary" name="Salary" placeholder="Salary"><br><br>
+                <label for="Salary">Salary:</label>
+  <input style="margin-left: 60px;" type="number" id="Salary" name="Salary" placeholder="Salary"><br><br>
 
-  <label for="Bonus">Bonus:</label><br>
-  <input type="number" id="bonus" name="bonus" placeholder="Bonus"><br><br>
+  <label for="Bonus">Bonus:</label>
+  <input style="margin-left: 60px;" type="number" id="bonus" name="bonus" placeholder="Bonus"><br><br>
 
-  <label for="months">No. of months:</label><br>
-  <input type="number" id="months" name="months" placeholder="12" value=12><br><br>
-
-  <label for="others">Others income:</label><br>
-  
-  <input type="number" id="others" name="others" placeholder="Other income">
-
+  <label for="months">No. of months:</label>
+  <input style="margin-left: 5px;" type="number" id="months" name="months" placeholder="12" value=12><br><br>
 
         </div>
         <!-- col_4 is the takes the amount of deduction -->
         <div class="col_4"><br>
-          <h2>Deduction</h2><br>
+          <h2>Annual Deduction</h2><br><hr><br>
       
           
-              <label for="Provident fund">Provident Fund:</label><br>
-<input type="number" id="provident" name="Provident fund" placeholder="Provident fund"><br><br>
+              <label for="Provident fund">Provident Fund:</label>
+<input style="margin-left: 60px;" type="number" id="provident" name="Provident fund" placeholder="Provident fund"><br><br>
 
-<label for="Citizen">Citizen Investment Trust:</label><br>
+<label for="Citizen">Citizen Investment Trust:</label>
 <input type="number" id="Citizen" name="Citizen" placeholder="Citizen Investment Trust"><br><br>
 
 
-<label for="Insurance">Insurance:</label><br>
-<input type="number" id="Insurance" name="Insurance" placeholder="Insurance"><br><br>   
+<label for="Insurance">Insurance:</label>
+<input style="margin-left: 100px;" type="number" id="Insurance" name="Insurance" placeholder="Insurance"><br><br>   
       </div>
-      <div>
-        <div class="total">
-          <label for="total">Total Salary:</label>
-          <input type="text" id="total" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br>  
-  
-          <label for="total">Total Tax:</label>
-          <input type="text" id="taxable" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br> 
-        </div>
-        
-        <div id="row_5">
-           <input id="reset" type="reset" value="Reset"></div>
-  
-        <div id="button">
-        <button id="calculate" type="button">Calculate</button>
-          </div>
-          <div id="note">
-            <p style="font-family: 'Times New Roman', Times, serif;">Note: This tool is made for general tax calculation only. Information from this tool should not be used for any other purpose.</p>
-  
-          </div>
-
       </div>
       
 
       </section>
-<!-- third_row section helps to display the result of the calculated tax. -->
-        <!-- <section class="third_row">
-         
-            
-           
-        </section> -->
+      <div class="total">
+        <label for="total">Total Salary:</label>
+        <input type="text" id="total" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br>  
+
+        <label for="total">Total Tax:</label>
+        <input type="text" id="taxable" name="Total Salary" style="padding: 3px; border-radius: 4px;" readonly><br><br> 
+      </div>
+      <div id="row_5">
+        <input id="reset" type="reset" value="Reset"></div>
+
+     <div id="button">
+     <button id="calculate" type="button">Calculate</button>
+       </div>
+       <div id="note">
+        <p style="font-family: 'Times New Roman', Times, serif; text-align: center;">Note: This tool is made for general tax calculation only. Information from this tool should not be used for any other purpose.</p>
+
+      </div>
+
         
     </form>
     <footer>

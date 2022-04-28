@@ -15,27 +15,30 @@
 <body>
     
      <!-- main is the parent id of of all child classes.  -->
-   <section id="main">
- 
-    <div class="home">
-        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./home.html">Home</a>
-    </div>
-    <div class="home">
-        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif" href="./home.html">News</a>
-        
-    </div>
-    
-    <div class="item">
-        <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif, serif " href="./calculator.html">Calculator</a>
-    </div>
-    <div class="Contactus">
-        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(255, 255, 255); text-decoration: none;  font-family: Arial, Helvetica, sans-serif" href="./contact.html">Contact Us</a>
-    </div>
-    
-    <div class="login">
-        <a style="background-color:rgba(255, 127, 80, 0); color: rgb(242, 242, 242); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./login.html">Log in</a>
-    </div>
-   </section>
+     <section id="main">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: rgb(208, 208, 208); margin-right: 750px; font-weight: 600; font-size: 30px;">
+          Tax Caculator System
+         </p>
+        <!-- The child class of header. -->
+        <div class="item">
+            <!-- inline style is use to apply unique style for a single element. -->
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./home.html">Home</a>
+        </div>
+        <div class="item">
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./news.html">News</a>
+        </div>
+        <div class="item">
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./calculator.html">Calculator</a>
+        </div>
+        <div class="item">
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./contact.html">Contact Us</a>
+        </div>
+        <div class="item">
+            <button class="open-button" onclick="openForm()">Login</button>
+        </div>
+            
+          
+    </section>
     <!-- Box1 class is apply to contain information and picture. -->
    <div class="box1">
     <div id="myDIV">
@@ -43,11 +46,50 @@
         <p style="font-family:Tahoma, sans-serif; font-size: 15px;">Salary tax calculator is designed for calculating tax payable to Nepal  <br> government on the salary  earned in a given year. The calculation is <br> based on NepalGovernment Tax Policy. </p>
      
      </div>
-     <div class="img" style="align-items: flex-end; align-content: flex-end; float: right; background-color: rgba(0, 255, 255, 0);">
-         <img style="height: 500px; width: 500px;" src="tax.png" alt="">
-     </div>
+     
        
    </div>
+
+   <!-- Login form  -->
+   <div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+      <h1>Login with your registered Email & Password.</h1><br>
+  
+     
+  
+     
+      
+      <label style="font-weight: 600 ">Username</label>  
+        <!--. The input HTML element is used to create interactive controls for web-based forms in order to accept data from the user  -->
+      <input type="text" name="Uname" id="Uname" placeholder="Username">    
+       
+      <label>Password</label>    
+      <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+      <br>   
+      <button id="log" value="Log In Here"> Log In Here </button>    
+      
+      <br> <br>  
+      <input type="checkbox" id="check">    
+      <span style="margin-right: 65px; color: black;">Remember me</span>
+      <a href="#">Forget Password?</a><br><br>
+
+      <p><b>Don't have account?</b> <a href="./signup.html" style="text-decoration: none;">Register Now </a> </p><br>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button> 
+    </form>
+  </div>
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+ 
+</div>
+
     <!--The footer section located at the bottom of the page where users can contact us through different social sites.   -->
 <footer>
     <section class="foot">
