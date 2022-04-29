@@ -64,11 +64,11 @@ function main(){
     const months = $('#months').val();
     const salaryYearly = salaryMonthly * months;
     const bonus = parseInt($('#bonus').val());
-    const otherIncome = parseInt($('#others').val());
+    
     providentFund = checkNumEPF(salaryMonthly);
     const CIT = parseInt($('#Citizen').val());
     insurance = checkNumInsurace();
-    const taxableIncome = salaryYearly + bonus + otherIncome - insurance - CIT - providentFund;
+    const taxableIncome = salaryYearly + bonus - insurance - CIT - providentFund;
 
     //this function takes in Yearly Salary of the person and divides it into small list according to the band's provided by government
     //It return a list of different sections of salary in a band-list like structure
