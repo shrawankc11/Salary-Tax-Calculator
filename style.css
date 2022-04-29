@@ -13,7 +13,7 @@ body{
     display: flex;
     align-items: center; 
     float: right;
-    justify-content:flex-end;
+    justify-content:center;
     background-color: #163272;
     
   }
@@ -25,7 +25,7 @@ body{
     display: flex;
     float: left;
     font-size: 18px;
-    font-weight: 400;
+    
     background-color: #04aa6d;
     
   
@@ -37,18 +37,18 @@ body{
     display: flex;
     float: left;
     font-size: 18px;
-    font-weight: 400;
+   
   }
   .item{
     
   background-color: #04aa6d00;
-    padding: 13px;
+    padding: 16px;
     display: flex;
     font-size: 18px;
-    font-weight: 400;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
+    
+    justify-content: center;
+    align-items: center;
+    align-content:center;
     
   }
   
@@ -117,13 +117,15 @@ body{
     flex-wrap: wrap ;
     flex-direction: row wrap;
     justify-content: space-between;
-    align-items: flex-start;  
+    align-items: flex-start; 
+    z-index: 1; 
 }
-.img{
+#img{
     justify-content: center;
     height: 600px;
     margin-top: 10px;
     margin-right: 150px;
+    width: 900px;
 }
 .foot{
     background-color: #1e56a0;
@@ -136,6 +138,7 @@ body{
     width: 100%;  
     bottom: 0;
     position: fixed;
+    z-index: 4;
     
 }
 #pp{
@@ -153,9 +156,16 @@ body{
 }
 
 #myDIV {
-    width: 45%;
-    height:200px;
-    background-color:#ffffffea;
+    width: 60%;
+    height: 1200px;
+    background-color:#ffffffcb;
+    text-align: center;
+    margin-left: 17%;
+   margin-top: 20px;
+   z-index: 2;
+    
+    
+    
     
   }
 
@@ -245,12 +255,15 @@ span{
    background-color: #bdc2c9;
     padding: 4px;
     display: flex;
+    opacity: 0.8;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
     align-content: flex-start;
     align-items: flex-start;
+    z-index: 9;
+    
     
     float: right;
     
@@ -264,7 +277,7 @@ span{
     float: right;
     right: 15px;
     border: 3px solid #f1f1f1;
-    z-index: 9;
+    z-index: 8;
   }
   
   /* Add styles to the form container */
@@ -273,6 +286,7 @@ span{
     padding: 10px;
     background-color: rgb(238, 238, 238);
     margin-right: 10px;
+    z-index: 7;
   }
   
   /* Full-width input fields */
@@ -318,6 +332,7 @@ span{
       font-size: 15px;
       text-align: center;
   }
+
  
 
  

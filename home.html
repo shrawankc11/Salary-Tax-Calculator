@@ -16,22 +16,22 @@
     
      <!-- main is the parent id of of all child classes.  -->
      <section id="main">
-        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: rgb(208, 208, 208); margin-right: 750px; font-weight: 600; font-size: 30px;">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; color: rgb(201, 199, 199); margin-right: 700px; font-weight: 600; font-size: 30px;">
           Tax Caculator System
          </p>
         <!-- The child class of header. -->
         <div class="item">
             <!-- inline style is use to apply unique style for a single element. -->
-            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./home.html">Home</a>
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(250, 241, 241); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./home.html">Home</a>
         </div>
         <div class="item">
-            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./news.html">News</a>
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(205, 198, 198); text-decoration: none; font-family: Arial, Helvetica, sans-serif " href="./news.html">News</a>
         </div>
         <div class="item">
-            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./calculator.html">Calculator</a>
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(205, 198, 198); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./calculator.html">Calculator</a>
         </div>
         <div class="item">
-            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(255, 255, 255); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./contact.html">Contact Us</a>
+            <a style="background-color:rgba(255, 127, 80, 0);min-height:20px; color: rgb(205, 198, 198); text-decoration: none; font-family: Arial, Helvetica, sans-serif  " href="./contact.html">Contact</a>
         </div>
         <div class="item">
             <button class="open-button" onclick="openForm()">Login</button>
@@ -41,11 +41,24 @@
     </section>
     <!-- Box1 class is apply to contain information and picture. -->
    <div class="box1">
-    <div id="myDIV">
-        <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px; color: red;" >Tax <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 50px;">Calculation System</p></p> <br>
-        <p style="font-family:Tahoma, sans-serif; font-size: 15px;">Salary tax calculator is designed for calculating tax payable to Nepal  <br> government on the salary  earned in a given year. The calculation is <br> based on NepalGovernment Tax Policy. </p>
-     
-     </div>
+
+       <div id="myDIV">
+                          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; color: rgb(15, 15, 15); font-weight: 600;" >Updated Income Tax rates in Nepal for 2078/2079 (2021-22) including tax rates and rules for Individuals and Couples and businesses. The tax threshold slabs for the Fiscal year 2078/79 is updated as per the Budget speech.</p> <br>
+
+                              <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; text-align: left; margin-left: 10px;">At the time of publishing, all information included in this paper was thought to be correct. While every effort has been made to ensure accuracy, mistakes, and omissions, no responsibility will be accepted for any inaccuracies, errors, or omissions. This publication should not be construed as providing a comprehensive explanation of any subject covered. BizSewa is not liable for anyone's use of the information in any way. </p><br>
+             
+                               <img  id="img" src="./info.jpg" alt="information"><br><br>
+
+                               <p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; text-align: left; margin-left: 10px;">*This is the Social Security Tax to be deposited in a separate revenue account (11211) provided for this purpose. However, tax payers registered as sole proprietorship or on pension income or on income from contribution based pension funds shall not attract social security tax i.e. 1%. And if the taxpayer is depositing an amount in the Social Security Fund (SSF) then for those taxpayers Social Security Tax is not applicable. <br> <br>** 36 % is computed as 30% plus additional 20% on such tax rate applicable to taxable income above Rs 2,000,000. <br><br> To calculate your tax liability add all the personal incomes and check for the slabs to find out rates. For example if you are unmarried and you earn Nrs 5,50,000 per year, your tax is calculated as: <br> br
+                               4,00,000*1%=Rs 4000 Plus <br><br>
+
+                               1,00,000*10%= Rs. 10000 Plus <br><br>
+                  
+                              50,000*20%= Rs 10000 <br><br>
+
+                               Total Tax= 4000+10000+10000= Nrs . 24000 <br></p>
+                
+        </div>
      
        
    </div>
@@ -54,11 +67,6 @@
    <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
       <h1>Login with your registered Email & Password.</h1><br>
-  
-     
-  
-     
-      
       <label style="font-weight: 600 ">Username</label>  
         <!--. The input HTML element is used to create interactive controls for web-based forms in order to accept data from the user  -->
       <input type="text" name="Uname" id="Uname" placeholder="Username">    

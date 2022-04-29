@@ -135,7 +135,7 @@ body{
 }
 .sec_row{
     border-radius: 5px;
-    background-color: #f2f2f243;
+    background-color: #000000;
     box-shadow: 0 0 5px rgba(64, 63, 63, 0.98);
     border-radius: 5px;
     width: 80%;
@@ -143,7 +143,7 @@ body{
     margin-right: 10%;
     margin-bottom: 20px;
     height: 300px;
-    background-color: #d6e4f0;
+    
     box-shadow: 0 0 2px rgba(64, 63, 63, 0.98);
     display: flex;
     flex-wrap: wrap ;
@@ -160,7 +160,7 @@ body{
     margin-right: 10%;
     margin-bottom: 20px;
     height: 60px;
-    background-color: #d6e4f0;
+    background-color: #071521;
     box-shadow: 0 0 2px rgba(64, 63, 63, 0.98);
     display: flex;
     flex-wrap: wrap ;
@@ -169,7 +169,7 @@ body{
     align-content: center;
     justify-content:space-around;
     float: left;
-    
+    color: white;
     
 }
 
@@ -177,7 +177,7 @@ body{
     width: 40%;
     height: 290px;
     background-color: #ec1e1e00; 
-   
+   color: white;
     
   
 
@@ -187,6 +187,7 @@ body{
     width: 40%;
     height: 290px;
     background-color: #3a1ef301;
+    color: white;
    
     
   
@@ -194,7 +195,7 @@ body{
 
 .third_row{
     border-radius: 5px;
-    background-color: #f2f2f232;
+    background-color: #0c0505;
     box-shadow: 0 0 5px rgba(64, 63, 63, 0.98);
     
     padding: 20px;
@@ -213,9 +214,9 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-    height: 40px;
+    height: 60px;
     border-radius: 5px;
-    background-color: #d6e4f0;
+    background-color: #010102;
     box-shadow: 0 0 2px rgba(64, 63, 63, 0.98);
     display: flex;
     flex-wrap: wrap ;
@@ -224,7 +225,9 @@ body{
     align-content: center;
     justify-content:space-around;
     float: left;
+    color: white;
 }
+
 
 .foot{
   background-color: #1e56a0;
@@ -291,7 +294,7 @@ body{
       }
       input{
         border-radius: 3px;
-              padding: 5px;
+              padding: 7px;
               border-color: rgba(25, 24, 24, 0.374);
               
       }
