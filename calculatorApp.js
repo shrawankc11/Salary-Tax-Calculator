@@ -62,6 +62,7 @@ function main(){
     //we set some variables to use it in the future code
     const salaryMonthly = $('#Salary').val();
     const months = $('#months').val();
+    const year = $('#time').val();
     const salaryYearly = salaryMonthly * months;
     const bonus = parseInt($('#bonus').val());
     
