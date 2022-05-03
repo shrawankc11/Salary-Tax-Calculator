@@ -215,37 +215,7 @@ body{
 #p{
   margin-left: 10px;
 }
-#reset{ 
-    background-color: #1a6ae3fe;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;   
-        border-radius: 4px;
-        padding: 5px;
-        border: 0px;
-        margin-top: 12px;
-        margin-left: 30%;
-       
 
-  
-}
-#calculate
-    {
-        background-color: #4CAF50;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 4px;
-        padding: 5px;
-        border: 0px;
-        margin-top: 12px;
-        margin-right: 30%;
-        
-      }
       #row_5{
         width: 50%;
         height: 50px;
